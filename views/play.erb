@@ -1,9 +1,9 @@
 <div style= "text-align:center">
   <h2>Welcome to Battle</h2>
-  <h4><%= $player_1 %> VS <%= $player_2%></h4>
+  <h4><%= $player_1.name %> VS <%= $player_2.name %></h4>
 </div>
 
-<span style="align:left">/60 HP</span>
+<span style="align:left"><%= $player_2.name %>: <%=$player_2.hp%>HP</span>
 
 <form action="/attack">
   <input type="submit" value="Attack">
