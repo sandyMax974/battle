@@ -1,4 +1,10 @@
 <div style= "text-align:center">
   <h2>Welcome to Battle</h2>
-  <h4><%= @player_1%> VS <%= @player_2%></h4>
+  <h4><%= $player_1 %> VS <%= $player_2%></h4>
 </div>
+
+<span style="align:left">/60 HP</span>
+
+<form action="/attack">
+  <input type="submit" value="Attack">
+</form>
