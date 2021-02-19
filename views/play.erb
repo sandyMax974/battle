@@ -1,12 +1,12 @@
 <div style= "text-align:center">
   <h2>Welcome to Battle</h2>
-  <h4><%= $player_1.name %> VS <%= $player_2.name %></h4>
+  <h4><%= @game.player_1.name %> VS <%= @game.player_2.name  %></h4>
 </div>
 
-<span style="align:left"><%= $player_2.name %>: <%=$player_2.hp%>HP</span>
+<span style="align:left"><%= @game.player_2.name %>: <%= @game.player_2.hp%>HP</span>
 
 <form action="/attack">
   <input type="submit" value="Attack">
 </form>
 
-<span style="align:right"><%= $player_1.name %>: <%=$player_1.hp%>HP</span>
+<span style="align:right"><%= @game.player_1.name %>: <%= @game.player_1.hp %>HP</span>
